@@ -1,0 +1,148 @@
+/*Tirando a formatação do chrome*/
+
+*{
+    box-sizing: border-box;
+/*Página Geral*/
+}
+html, body{
+    margin: 0;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+}
+header, main, footer {
+    text-align: center;
+}
+
+section.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 70px;
+    width: 90%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-gap: 45px;
+    background-color: #ff4f4f;
+    padding: 16px 64px;
+    border-radius: 6px;
+
+}
+.form h2{
+    text-align: right;
+    color:#4b4949ee;
+
+}
+form input,
+form button{
+    width: 100%;
+    margin-bottom: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border: 1px rgb(136, 131, 131) solid;
+}
+form input{
+    background-color: transparent;
+    
+}
+form button{
+    font-weight: bold;
+}
+form input::placeholder{
+    color: #918d8daa;
+    
+}
+header{
+    margin-bottom: 70px;
+    width: 90%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ .logo{
+    width: 120px;
+    margin: 70px;
+
+}
+header button{
+    margin-top: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #4b4949ee;
+    color: rgb(214, 208, 208);
+    font-weight: bold;
+    border: none;
+}
+main{
+    margin-bottom: 70px;
+    width: 90%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.blood{
+    color: #e71b1b;
+    font-weight: bold;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    
+    
+}
+.blood::before{
+    content: "";
+    background-color: #ff4f4f11;
+    width: 40px;
+    height: 40px;  
+    position: absolute;
+    border-radius: 50%;
+    border-top-right-radius: 0;
+    transform: rotate(-45deg);
+}
+.donor p{
+    margin-top: 24px;
+    padding: 14px;
+}
+main .donors{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+header h1, main h2{
+    margin-bottom: 70px;
+    text-align: right;
+   
+}
+h1, h2{
+    color: #000000cc;
+}
+main h2 span{
+    color: rgb(221, 46, 46);
+}
+footer{
+    margin-top: auto;
+    padding-bottom: 16px;
+    border: 1px solid #eee;
+}
+/* funcionalidades com js*/
+section.form.hide {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    margin-top: -70px;
+}
